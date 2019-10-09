@@ -153,6 +153,13 @@ img.hover-shadow {
     <a href = "logoutt.php">LOGOUT</a>
     </div>
 </div>
+<table cellspacing="0" cellpadding="0" align="center" border="0" >
+    <tr>
+        <td colspan="3" height="100" align="center">
+<h3 style="margin-center: 10px;">WELCOME</h3>
+</td>
+</tr>
+    </table>
 <h1 style="text-align:center">SUPER BOOK STORE</h1>
 <br><br>
 <table cellspacing="0" cellpadding="0" align="center" border="0" >
@@ -162,11 +169,7 @@ img.hover-shadow {
 </td>
 </tr>
 </table>
-    <table cellspacing="0" cellpadding="0" align="center" border="0" >
-    <tr>
-        <td colspan="3" height="100" align="center">
-<h3 style="margin-center: 10px;">WELCOME</h3>
-</td>
+    
 
     <br><br><br><br>
     
