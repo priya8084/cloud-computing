@@ -1,57 +1,8 @@
 
 <html>
   
-<?php include('config.php');
 
-if (isset($_POST['btnlogin'])) {
-    if(isset($_POST["remember_me"])){
-        setcookie("email",$_POST['email'], time()+ 60*60*24,"/");
-        $_COOKIE["email"]=$_POST['email'];
-    }
-    else {
-        setcookie("email",null,-1,"/");
-    }
 
-    $error = "";
-    
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $remember_me = $_POST['remember_me'];
-
-    if (empty($email)) {
-        $error = "Please enter your email";
-    }
-    if (empty($password)) {
-        $error = "Please enter your password";
-    }
-
-    if (empty($error)) {
-        
-       $query = "Select id,name,email,utype from users where email = '$email' AND password = '$password'";
-        $result = $conn->query($query);
-        if (mysqli_num_rows($result) > 0) {
-            $row = mysqli_fetch_array($result);
-
-            
-            $_SESSION['user_id'] = $row['id'];
-            $_SESSION['user_name'] = $row['name'];
-            $_SESSION['user_type'] = $row['utype'];
-
-            //create cookie
-            if(!empty($remember_me)){
-                $userArr['user_id'] = $row['id'];
-                $userArr['user_name'] = $row['name'];
-                $userArr['user_type'] = $row['utype'];
-                setcookie('remember_me', '', time() - $expire);
-                setcookie('remember_me', json_encode($userArr), time() + $cookie_time);
-            }
-            header('location:myaccount.php');
-        }else{
-            header('location:login.php?reg=failed');
-        }
-    }
-}
-?> 
 <!DOCTYPE HTML>
 
 <html>
@@ -59,7 +10,7 @@ if (isset($_POST['btnlogin'])) {
     
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >        
         
-        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="front.css" rel="stylesheet" type="text/css">
         <script type="text/javascript">
             function checkform() {
                 var email = document.getElementById('email');

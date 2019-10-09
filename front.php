@@ -1,4 +1,4 @@
-<?php include('header.php');?>
+<?php include('header.php'); ?>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
@@ -26,13 +26,9 @@
   
 </head>
 <body bgcolor="#33FFFC">
-<table cellspacing="0" cellpadding="0" align="center" border="0" >
-    <tr>
-        <td colspan="3" height="100" align="center">
-        <a href="rec.php">CHECK FOR RECOMMENDATION</a>
-</td>
-</tr>
-</table>
+    
+    
+
     <div class="row">
      <div class="column">
     <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1474154022l/3._SY475_.jpg" style="width:85%">

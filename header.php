@@ -25,5 +25,12 @@
 </div>
 <h1 style="text-align:center">SUPER BOOK STORE</h1>
 <br><br>
+<table cellspacing="0" cellpadding="0" align="center" border="0" >
+    <tr>
+        <td colspan="3" height="100" align="center">
+        <a href="rec.php">CHECK FOR RECOMMENDATION</a>
+</td>
+</tr>
+</table>
 </body>
 </html>
